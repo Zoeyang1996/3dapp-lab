@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/maintext.css">
+    <link rel='stylesheet' type='text/css' href='x3dom-1.8.3/x3dom.css'></link>
+    <script type='text/javascript' src='https://www.x3dom.org/x3dom/release/x3dom.js'></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+  </head>
+  
+  <body>
+
+    <!--Header-->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+          <h1>1</h1>
+          <h1>oca</h1>
+          <h2>Cola</h2>
+          <h3>Journey</h3>
+          <p>Refreshing the world, one story at a time</p>
+          </a>
+        </div>
+
+          <!-- Three bar icon that appears when page is shrunk, collapses the navigation links, not data target is the id selector #navbarSupportedContent -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Link Menu item button to the links class navbar-collapse id selector #navbarSupportedContent -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- The Links -->
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+
+                <!-- Dropdown for the Coca Cola Drinks Menu -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-expanded="false"> 
+                    Drinks
+            
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Coca Cola</a>
+                    <a class="dropdown-item" href="#">Sprite</a>
+                    <a class="dropdown-item" href="#">Dr Pepper</a>
+                  </div>
+                </li>
+              </ul>
+          </div> 
+      </div>
+    </nav>
+    
+
+    <!--Body-->
+    <div class="container-fluid">
+        <div class="row bgImage">
+            <div class="col-sm-9">
+                <div class="card text-left">
+                    <div class="card-header">
+                      <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Coke</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Fanta</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Costa</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Dr Pepper</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Sprite</a>
+                        </li>
+
+                      </ul>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Coca Cola Bottle X3D Model</h4>
+                    <div class="model3D">
+                        <x3d >
+                          
+                            <scene>
+                                <inline url="sprite.x3d"></inline>
+                            </scene>
+                            
+                        </x3d>
+                    </div>
+                </div>
+            </div>
+            <!--column to hold the X3D model-->
+            <div class="col-sm-3">
+              <div class="card text-left">
+               <div class="card-header gallery-header"> Gallery</div>
+               <div class="card-body">
+                  <h4 class="card-title">3D Image Gallery</h4>
+                  <a href="coke.html">
+                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg" alt="Coca Cola">
+                  </a>
+                  <a href="sprite.html">
+                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Coca Cola">
+                  </a>
+                  <a href="pepper.html">
+                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg" alt="Coca Cola">
+                  </a>
+
+               </div>
+               </div>
+             </div>            
+         </div>
+     </div>
+
+
+
+  <!--Footer-->  
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <div class="navbar-text float-left copyright">
+        <p><span class="aligh-baseline"> &copy 2019 Mobile Web 3D Applications </span></p>
+      </div>
+
+    </div>
+  </nav>
+
+  
+    <script src="js/bootstrap.js"></script>
+
+  </body>
+
+</html>

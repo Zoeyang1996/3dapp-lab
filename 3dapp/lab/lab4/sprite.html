@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
+    <link rel='stylesheet' type='text/css' href='x3dom-1.8.3/x3dom.css'></link>
+    <script type='text/javascript' src='https://www.x3dom.org/x3dom/release/x3dom.js'></script>
+    <link rel="stylesheet" href="css/maintext.css">
+    
+    
+    
+    <title>Sprite lab4</title>
+  </head>
+  
+  <body>
+
+    <!--Header-->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+          <h1>1</h1>
+          <h1>oca</h1>
+          <h2>Cola</h2>
+          <h3>Journey</h3>
+          <p>Refreshing the world, one story at a time</p>
+          </a>
+        </div>
+
+          <!-- Three bar icon that appears when page is shrunk, collapses the navigation links, not data target is the id selector #navbarSupportedContent -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Link Menu item button to the links class navbar-collapse id selector #navbarSupportedContent -->
+          <button popovertarget="menu">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.4 73.9">
+              <path class="cls-1" d="m50.3,31.5H5.5c-3,0-5.5,2.5-5.5,5.5h0c0,3,2.5,5.5,5.5,5.5h44.9c3,0,5.5-2.5,5.5-5.5h0c-.1-3.1-2.5-5.5-5.6-5.5Z"/>
+              <path class="cls-1" d="m67.8,0H5.5C2.5,0,0,2.5,0,5.5h0c0,3,2.5,5.5,5.5,5.5h62.4c3,0,5.5-2.5,5.5-5.5h0c-.1-3-2.5-5.5-5.6-5.5Z"/>
+              <path class="cls-1" d="m67.8,62.9H5.5c-3,0-5.5,2.5-5.5,5.5h0c0,3,2.5,5.5,5.5,5.5h62.4c3,0,5.5-2.5,5.5-5.5h0c-.1-3-2.5-5.5-5.6-5.5Z"/>
+            </svg>
+          </button>
+
+          <nav class="navbar-popover" popover role="menu" id="menu">
+            <button popovertarget="menu" popovertargetaction="hide">
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.38 80.38">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <polygon class="cls-1" points="80.38 11.18 69.2 0 40.19 29.01 11.18 0 0 11.18 29.01 40.19 0 69.2 11.18 80.38 40.19 51.37 69.2 80.38 80.38 69.2 51.37 40.19 80.38 11.18"/>
+              </svg>
+            </button>
+
+            <ul>
+              <li>
+                <a class="nav-link " href="index.html">Home</a>
+                <a class="nav-link " href="#">About</a>
+                <a class="nav-link " href="coke.html">Coke</a>
+                <a class="nav-link " href="sprite.html">Sprite</a>
+              </li>
+            </ul>
+            </nav>
+    </div>
+  </nav>
+
+    <!--Body-->
+    <div class="container-fluid">
+
+        <div class="row bgImage">
+            <div class="col-sm-9">
+                <div class="card text-left">
+                    <!--button to change the model-->
+                    <div class="card-header">
+                      <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link" href="coke.html">Coke</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="sprite.html">Sprite</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="pepper.html">Pepper</a>
+                        </li>
+                      </ul>
+                    </div>
+                     <!--sprite model-->
+                     <div class="card-body">
+                      <h4 class="card-title">Sprite X3D Model</h4>
+                      <div class="model3D">
+                          <x3d>
+                              <scene>
+                                  <inline url="sprite2.x3d"></inline>
+                              </scene>
+                          </x3d>
+                      </div>
+                     </div>
+                </div>
+            </div>
+            <!-- Column to change 3D Image gallery --> 
+            <div class="col-sm-3">
+              <div class="card text-left">
+                  <div class="card-header gallery-header">
+                      Gallery
+                  </div>
+                  <div class="card-body">
+                      <h4 class="card-title">3D Image Gallery</h4>
+                      <a href="coke.html">
+                          <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg" alt="Coca Cola">
+                      </a>
+                      <a href="sprite.html">
+                          <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Coca Cola">
+                      </a>
+                      <a href="pepper.html">
+                          <img class="card-img-top img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg" alt="Coca Cola">
+                      </a>
+                      <p class="card-text">These 3D images of the Coke can, Sprite bottle and Dr Pepper cup are rendered in 3ds Max 2017 with Mental Ray</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <!-- Sprite Column -->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                  <h3 class="card-title">Sprite</h3>
+                  <p class="card-text">Atlanta Beginnings: It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled.
+                    Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass.</p>    
+                  <a href="#" class="btn btn-primary">Find out more ...</a>   
+              </div>
+            </div>
+          </div> 
+        </div> 
+    
+      </div>
+
+  
+
+
+
+   <!--Footer-->  
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <div class="navbar-text float-left copyright">
+        <p><span class="aligh-baseline"> &copy 2024 Mobile Web 3D Applications </span></p>
+      </div>
+      <div class="navbar-text social">
+        <a href="#"><i class="fab fa-github-square fa-2x fa-pull-right"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square fa-2x fa-pull-right"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-2x fa-pull-right"></i></a>
+        <a href="#"><i class="fab fa-facebook-square fa-2x fa-pull-right"></i></a>
+       </div>
+
+    </div>
+  </nav>
+
+  
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <!--<script src="js/bootstrap.js"></script>-->
+  <script src="js/bootstrap-4.4.1.js"></script>
+
+
+
+  <!-- Include the x3dom JavaScript -->
+  <script type='text/javascript' src='js/x3dom.js'></script>
+  </body>
+
+</html>
